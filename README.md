@@ -1,5 +1,6 @@
 ## GlowAI - Get a customized skincare routine powered by AI 🧖‍♂️ 🧖‍♀️
 
+- Enter your skin type & budget and we'll take care of the rest 🤝
 
 ## Getting Started
 
