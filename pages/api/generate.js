@@ -7,7 +7,7 @@ const configuration = new Configuration({
 const openai = new OpenAIApi(configuration);
 
 const basePromptPrefix =
-  "Create a custom skincare routine. Based on my budget and skin type: ";
+  "Create a custom skincare routine and include prices. Based on my budget and skin type: ";
 const generateAction = async (req, res) => {
   //run first prompt
   console.log(

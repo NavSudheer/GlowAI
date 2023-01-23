@@ -94,13 +94,15 @@ const Routine = () => {
           <div className="flex flex-col justify-center items-center mt-10">
             <div>
               <div>
-                <h3 className="text-blue-800">Output</h3>
+                <h3 className="text-transparent font-bold bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 text-2xl">
+                  Output
+                </h3>
               </div>
             </div>
             <div className="flex flex-col justify-center items-center">
               <p
                 class="api-output"
-                className="items-center justify-center p-5 break-normal"
+                className="items-center justify-center p-5 pt-3 break-normal"
               >
                 {apiOutput}
               </p>
