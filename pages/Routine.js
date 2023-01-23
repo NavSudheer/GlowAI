@@ -1,7 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "@/components/Navbar";
 
 const routine = () => {
+  const [budgetInput, setBudgetInput] = useState("");
+  const [skinTypeInput, setSkinTypeInput] = useState("");
+
+  const onBudgetChangedText = (e) => {
+    console.log(e.target.value);
+    setBudgetInput(e.target.value);
+  };
+
+  const onSkinTypeChangedText = (e) => {
+    console.log(e.target.value);
+    setSkinTypeInput(e.target.value);
+  };
+
   return (
     <>
       <Navbar />
@@ -18,6 +31,8 @@ const routine = () => {
           aria-describedby="budget-text-explanation"
           class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-60 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
           placeholder="$100"
+          value={budgetInput}
+          onChange={onBudgetChangedText}
         />
         <label
           for="skintype-text"
@@ -31,6 +46,8 @@ const routine = () => {
           aria-describedby="skintype-text-explanation"
           class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-60 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
           placeholder="oily, dry, combination, etc"
+          value={skinTypeInput}
+          onChange={onSkinTypeChangedText}
         />
       </div>
     </>
