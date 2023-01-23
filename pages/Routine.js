@@ -49,6 +49,12 @@ const Routine = () => {
           value={skinTypeInput}
           onChange={onSkinTypeChangedText}
         />
+        <button
+          onClick={null}
+          className="bg-stone-500 hover:bg-stone-600 text-white font-bold py-2 px-4 mt-10 rounded justify-center items-center"
+        >
+          Generate routine
+        </button>
       </div>
     </>
   );
