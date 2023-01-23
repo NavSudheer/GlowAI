@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "@/components/Navbar";
 
-const routine = () => {
+const Routine = () => {
   const [budgetInput, setBudgetInput] = useState("");
   const [skinTypeInput, setSkinTypeInput] = useState("");
 
@@ -54,4 +54,4 @@ const routine = () => {
   );
 };
 
-export default routine;
+export default Routine;

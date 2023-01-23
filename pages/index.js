@@ -38,7 +38,7 @@ export default function Home() {
             Want a new skincare routine? Enter your skin type and budget and our
             AI will handle the rest.
           </h2>
-          <Link href="/routine">
+          <Link href="/Routine">
             <button className="bg-zinc-700 hover:bg-zinc-900 text-white font-bold py-2 px-4 mt-10 rounded justify-center items-center">
               Get started now
             </button>
