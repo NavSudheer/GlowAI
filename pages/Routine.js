@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import Navbar from "@/components/Navbar";
 
 const Routine = () => {
@@ -22,10 +23,20 @@ const Routine = () => {
     const data = await res.json();
     const { output } = data;
     console.log("OpenAI replied...", output.text);
-    console.log(budgetInput);
-    console.log(skinTypeInput);
 
-    setApiOutput(`${output.text}`);
+    function formatOutput() {
+      return (
+        <div
+          dangerouslySetInnerHTML={{
+            __html: output.text.replace(/\n/g, "</br>"),
+          }}
+        />
+      );
+    }
+
+    setApiOutput(formatOutput);
+
+    //setApiOutput(`${output.text}`);
     setIsGenerating(false);
   };
 
@@ -87,7 +98,12 @@ const Routine = () => {
               </div>
             </div>
             <div className="flex flex-col justify-center items-center">
-              <p>{apiOutput}</p>
+              <p
+                class="api-output"
+                className="items-center justify-center p-5 break-normal"
+              >
+                {apiOutput}
+              </p>
             </div>
           </div>
         )}

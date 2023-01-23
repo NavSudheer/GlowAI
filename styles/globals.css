@@ -6,6 +6,12 @@ h1 {
   font-family: "Rubik", sans-serif;
 }
 
-body {
+body,
+html {
+  font-family: "Rubik", sans-serif;
+}
+
+p,
+div {
   font-family: "Rubik", sans-serif;
 }
