@@ -10,7 +10,7 @@ const basePromptPrefix = "Give me a skin care routine with a budget of: ";
 
 const basePromptPrefix1 = "and for my skin type: ";
 const basePromptSuffix =
-  "Do NOT go over my budget. Format it perfectly. No random words.";
+  "Do NOT go over my budget. Format it perfectly. No random words. Include total cost at the bottom. Do not give a total cost more than the budget I asked for. Also include step by step how to apply the products you recommend.";
 const generateAction = async (req, res) => {
   //run first prompt
   console.log(
