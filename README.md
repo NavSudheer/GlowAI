@@ -2,6 +2,9 @@
 
 - Enter your skin type & budget and we'll take care of the rest 🤝
 
+<img width="1315" alt="Screenshot 2023-01-23 at 3 24 39 PM" src="https://user-images.githubusercontent.com/9670009/214174853-16cd29d8-583e-4d3c-b233-d7de6b5283c4.png">
+
+
 ## Getting Started
 
 First, run the development server:
