@@ -26,7 +26,7 @@ export default function Home() {
       <div className="flex flex-col min-h-screen justify-center items-center">
         <div className="flex flex-row justify-center items-center">
           <h1 className="font-extrabold  text-6xl bg-clip-text ">
-            Custom skincare routine&#160;
+            Custom skincare routines&#160;
           </h1>
           <h1 className="font-extrabold text-transparent text-6xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
             powered by AI.
