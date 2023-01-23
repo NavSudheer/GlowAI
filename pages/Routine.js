@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "@/components/Navbar";
 
-const Routine = () => {
+const routine = () => {
   return (
     <>
       <Navbar />
@@ -37,4 +37,4 @@ const Routine = () => {
   );
 };
 
-export default Routine;
+export default routine;
