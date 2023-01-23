@@ -25,16 +25,16 @@ export default function Home() {
       <Navbar />
       <div className="flex flex-col min-h-screen justify-center items-center">
         <div className="flex flex-row justify-center items-center">
-          <h1 className="font-extrabold  text-6xl bg-clip-text ">
+          <h1 className="font-extrabold text-2xl bg-clip-text md:text-7xl sm:text-6xl">
             Custom skincare routines&#160;
           </h1>
-          <h1 className="font-extrabold text-transparent text-6xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
+          <h1 className="font-extrabold text-transparent text-2xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 md:text-5xl sm:text-4xl">
             powered by AI.
           </h1>
           {/* <h1 className="text-8xl ml-5">🧖🏻‍♀️</h1> */}
         </div>
         <div className="flex flex-col items-center">
-          <h2 className="flex flex-col items-center justify-center mt-10 text-2xl">
+          <h2 className="flex flex-col items-center justify-center mt-10 md:text-2xl sm:text-2xl text-2xl">
             Want a new skincare routine? Enter your skin type and budget and our
             AI will handle the rest.
           </h2>
