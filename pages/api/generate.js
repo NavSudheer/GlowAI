@@ -6,8 +6,9 @@ const configuration = new Configuration({
 
 const openai = new OpenAIApi(configuration);
 
-const basePromptPrefix =
-  "Create a custom skincare routine and include prices, make sure the total cost doesn't go over the budget cost. Based on my budget and skin type: ";
+const basePromptPrefix = "Give me a skin care routine with a budget of: ";
+
+const basePromptPrefix1 = "and for my skin type: ";
 const generateAction = async (req, res) => {
   //run first prompt
   console.log(
@@ -16,7 +17,7 @@ const generateAction = async (req, res) => {
 
   const baseCompletion = await openai.createCompletion({
     model: `text-davinci-003`,
-    prompt: `${basePromptPrefix}${req.body.budgetInput} ${req.body.skinTypeInput}`,
+    prompt: `${basePromptPrefix} ${req.body.budgetInput} ${basePromptPrefix1} ${req.body.skinTypeInput}`,
     temperature: 0.7,
     max_tokens: 350,
   });
