@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 const Routine = () => {
   const [budgetInput, setBudgetInput] = useState("");
   const [skinTypeInput, setSkinTypeInput] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
 
   const [apiOutput, setApiOutput] = useState("");
   const [isGenerating, setIsGenerating] = useState(false);
@@ -84,12 +85,22 @@ const Routine = () => {
           value={skinTypeInput}
           onChange={onSkinTypeChangedText}
         />
-        <button
-          onClick={callGenerateEndpoint}
-          className="bg-stone-500 hover:bg-stone-600 text-white font-bold py-2 px-4 mt-10 rounded justify-center items-center"
-        >
-          Generate routine
-        </button>
+        {isGenerating ? (
+          <button
+            onClick={callGenerateEndpoint}
+            className="bg-stone-500 hover:bg-stone-600 text-white font-bold py-2 px-4 mt-10 rounded justify-center items-center"
+          >
+            Generating...
+          </button>
+        ) : (
+          <button
+            onClick={callGenerateEndpoint}
+            className="bg-stone-500 hover:bg-stone-600 text-white font-bold py-2 px-4 mt-10 rounded justify-center items-center"
+          >
+            Generate routine
+          </button>
+        )}
+
         {apiOutput && (
           <div className="flex flex-col justify-center items-center mt-10">
             <div>
