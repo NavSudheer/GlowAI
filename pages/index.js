@@ -24,15 +24,22 @@ export default function Home() {
       <Navbar />
       <div className="flex flex-col min-h-screen justify-center items-center">
         <div className="flex flex-row justify-center items-center">
-          <h1 class="font-extrabold text-transparent text-8xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
-            Glow AI
+          <h1 class="font-extrabold  text-6xl bg-clip-text ">
+            Custom skincare routine&#160;
           </h1>
-          <h1 className="text-8xl ml-5">🧖🏻‍♀️</h1>
+          <h1 className="font-extrabold text-transparent text-6xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
+            powered by AI.
+          </h1>
+          {/* <h1 className="text-8xl ml-5">🧖🏻‍♀️</h1> */}
         </div>
-        <div>
-          <h2 className="flex flex-row justify-center items-center mt-10 text-2xl">
-            Enter your skin type and budget and our AI will handle the rest.
+        <div className="flex flex-col items-center">
+          <h2 className="flex flex-col items-center justify-center mt-10 text-2xl">
+            Want a new skincare routine? Enter your skin type and budget and our
+            AI will handle the rest.
           </h2>
+          <button class="bg-zinc-700 hover:bg-zinc-900 text-white font-bold py-2 px-4 mt-10 rounded justify-center items-center">
+            Get started now
+          </button>
         </div>
       </div>
     </>
