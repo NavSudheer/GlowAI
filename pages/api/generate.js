@@ -6,7 +6,7 @@ const configuration = new Configuration({
 
 const openai = new OpenAIApi(configuration);
 
-const basePromptPrefix = "Give me a skin care routine with a budget of: ";
+const basePromptPrefix = "Give me a skin care routine with a budget of ";
 
 const basePromptPrefix1 = "and for my skin type: ";
 const basePromptSuffix =
